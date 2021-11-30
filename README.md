@@ -7,7 +7,12 @@ https://codereview.stackexchange.com/questions/203778/brute-force-passwords-in-c
 https://codereview.stackexchange.com/questions/38474/brute-force-algorithm-in-c
 
 # Project Details
-This project is a Brute Force Password Checker Used in our CISC372 Final Project. The primary goal of this project was to create serial code for a Brute Force Password Checker and then use parallelization to speed up the runtime. Speed-up was done via OpenMP on multicore CPUs, OpenACC on multicore CPUs, and OpenACC on GPUs. The serial code (passwordCracker.c) uses an alphabet character array and a buffer string to go iterate through all possible strings from 1 character to 12 characters (which can be changed in the code by changing the MAX_LENGTH variable). 
+This project is a Brute Force Password Checker Used in our CISC372 Final Project. The primary goal of this project was to create serial code for a Brute Force Password Checker and then use parallelization to speed up the runtime. Speed-up was done via OpenMP on multicore CPUs, OpenACC on multicore CPUs, and OpenACC on GPUs. The serial code (passwordCracker.c) uses an alphabet character array and a buffer string to go iterate through all possible strings from 1 character to 12 characters (which can be changed in the code by changing the MAX_LENGTH variable).
+
+For our project, the following passwords were used
+ - CuDa
+ - GpU13
+ - nViDiA
 
 # Running the Code
 
