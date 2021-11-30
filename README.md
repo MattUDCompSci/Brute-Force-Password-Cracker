@@ -14,7 +14,7 @@ For our project, the following passwords were used
  - GpU13
  - nViDiA
 
-# Running the Code
+# Compiling Code
 
 All code provided in this Github repository has been run on the bridges2 supercomputer. To run this code on your machine, being by loading the NVHPC 21.7 Compiler onto your system. For Bridges2 systems, this command is:
 
@@ -58,3 +58,13 @@ nvc -acc -gpu=cc70 -Minfo=accel passwordCrackerACC.c -o passwordCrackerACCGPU
 ```
 
 > Output will vary among password lengths (4 character: 0-0.09 seconds, 5 characters: 1-1.5 seconds, 6 characters: 1-1.5 minutes)  
+
+# Running Code
+
+To run the program, using the approproate passwordCracker executable with a single argument of the password you wish to have cracked:
+
+```
+./passwordCracker [password]
+```
+
+Sample Outputs from our project can be found in the Ouput folders. Filenames of the outputs include the parallelization method as well as the password used in the format: methodPassword
