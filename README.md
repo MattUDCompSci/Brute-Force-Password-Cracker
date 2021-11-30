@@ -67,4 +67,6 @@ To run the program, using the approproate passwordCracker executable with a sing
 ./passwordCracker [password]
 ```
 
-Sample Outputs from our project can be found in the Ouput folders. Filenames of the outputs include the parallelization method as well as the password used in the format: methodPassword
+Sample Outputs from our project can be found in the Ouput folder, with each paralleization technique containing outputs from their respective methods. Filenames of the outputs include the password tested and, if applicable, the number of threads/cores run on. All code was timed using the time command line function. Serial Code was profiled using gprof, Multicore code was profiled using perf counter, and GPU code was profiled using Nsight Compute.
+
+
