@@ -1,0 +1,45 @@
+Password was cracked: GpU13 : GpU13
+[ perf record: Woken up 65 times to write data ]
+[ perf record: Captured and wrote 0.006 MB perf.data (67 samples) ]
+
+real	0m6.423s
+user	0m7.132s
+sys	0m7.621s
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 67  of event 'cycles:u'
+# Event count (approx.): 40043633
+#
+# Overhead  Command          Shared Object     Symbol                                   
+# ........  ...............  ................  .........................................
+#
+    79.12%  passwordCracker  libc-2.28.so      [.] __strcmp_avx2
+     3.99%  passwordCracker  ld-2.28.so        [.] _dl_relocate_object
+     2.81%  passwordCracker  ld-2.28.so        [.] _dl_lookup_symbol_x
+     2.74%  passwordCracker  libc-2.28.so      [.] __memset_avx2_unaligned_erms
+     2.32%  passwordCracker  [unknown]         [k] 0xffffffffab200010
+     1.91%  passwordCracker  libnvomp.so       [.] hxiEmulateHostThreadLaunch
+     1.91%  passwordCracker  libnvomp.so       [.] hxiMasterWaitHostTreeBarrierWithTasks
+     1.88%  passwordCracker  libnvomp.so       [.] runNewTeam
+     1.74%  passwordCracker  passwordCracker   [.] check
+     1.00%  passwordCracker  libnvomp.so       [.] threadPoolEntryPoint
+     0.47%  passwordCracker  [unknown]         [k] 0xffffffffaac2d9fd
+     0.07%  passwordCracker  [unknown]         [k] 0xffffffffaa8e05c5
+     0.03%  passwordCracker  ld-2.28.so        [.] __GI___tunables_init
+     0.00%  passwordCracker  ld-2.28.so        [.] _dl_fixup
+     0.00%  passwordCracker  libnvomp.so       [.] _setjmp@plt
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffffab0827a7
+     0.00%  passwordCracker  libnvomp.so       [.] createSlaveThreads
+     0.00%  passwordCracker  libc-2.28.so      [.] __clone
+     0.00%  passwordCracker  libc-2.28.so      [.] __ctype_init
+     0.00%  passwordCracker  libc-2.28.so      [.] _setjmp
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffffaaa53563
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffffab2011f0
+
+
+#
+# (Tip: System-wide collection from all CPUs: perf record -a)
+#

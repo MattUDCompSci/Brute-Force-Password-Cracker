@@ -1,0 +1,67 @@
+Password was cracked: nViDiA : nViDiA
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.008 MB perf.data (103 samples) ]
+
+real	2m53s
+user	2m54s
+sys	2m53s
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 103  of event 'cycles:u'
+# Event count (approx.): 49842948
+#
+# Overhead  Command          Shared Object     Symbol                                   
+# ........  ...............  ................  .........................................
+#
+    36.56%  passwordCracker  libnvomp.so       [.] threadPoolEntryPoint
+    25.90%  passwordCracker  libnvomp.so       [.] hxiMasterWaitHostTreeBarrier
+     3.38%  passwordCracker  libnvomp.so       [.] hxiExecuteHostTreeBarrierWithTasks
+     2.90%  passwordCracker  ld-2.28.so        [.] do_lookup_x
+     2.90%  passwordCracker  [unknown]         [k] 0xffffffff986170a7
+     2.68%  passwordCracker  libc-2.28.so      [.] __sched_yield
+     2.46%  passwordCracker  [unknown]         [k] 0xffffffff98c9119b
+     2.40%  passwordCracker  [unknown]         [k] 0xffffffff984f37a7
+     2.08%  passwordCracker  [unknown]         [k] 0xffffffff9882d983
+     1.74%  passwordCracker  libnvomp.so       [.] hxiMasterWaitHostTreeBarrierWithTasks
+     1.74%  passwordCracker  [unknown]         [k] 0xffffffff984f37d5
+     1.59%  passwordCracker  [unknown]         [k] 0xffffffff984eb000
+     1.57%  passwordCracker  [unknown]         [k] 0xffffffff984ead1d
+     1.50%  passwordCracker  [unknown]         [k] 0xffffffff98427fce
+     1.43%  passwordCracker  [unknown]         [k] 0xffffffff984eb068
+     1.40%  passwordCracker  libc-2.28.so      [.] __strcmp_avx2
+     1.39%  passwordCracker  [unknown]         [k] 0xffffffff98619175
+     1.33%  passwordCracker  [unknown]         [k] 0xffffffff984f3767
+     1.32%  passwordCracker  [unknown]         [k] 0xffffffff984f3500
+     1.26%  passwordCracker  [unknown]         [k] 0xffffffff984dcd0e
+     1.20%  passwordCracker  [unknown]         [k] 0xffffffff98e0019e
+     1.20%  passwordCracker  [unknown]         [k] 0xffffffff984e6bc9
+     0.08%  passwordCracker  [unknown]         [k] 0xffffffff98c75705
+     0.01%  passwordCracker  [unknown]         [k] 0xffffffff9882d9fd
+     0.01%  passwordCracker  ld-2.28.so        [.] __GI___tunables_init
+     0.00%  passwordCracker  ld-2.28.so        [.] memset
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff985284ad
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98e011f3
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff984e7985
+     0.00%  passwordCracker  ld-2.28.so        [.] __tls_get_addr
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff9865a9d0
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff987874c2
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff9866dc5c
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98654147
+     0.00%  passwordCracker  libnvomp.so       [.] __kmpc_for_static_init_4
+     0.00%  passwordCracker  libnvomp.so       [.] _setjmp@plt
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98509a4c
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff9861844d
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98c827a7
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98c82ae7
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98c96210
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98e0001c
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffff98e01453
+     0.00%  passwordCracker  [unknown]         [k] 0xffffffffc17dedb5
+
+
+#
+# (Tip: Show individual samples with: perf script)
+#

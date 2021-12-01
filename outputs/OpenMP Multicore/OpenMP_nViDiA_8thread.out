@@ -1,0 +1,110 @@
+Password was cracked: nViDiA : nViDiA
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.014 MB perf.data (240 samples) ]
+
+real	2m48s
+user	2m49s
+sys	2m48s
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 240  of event 'cycles:u'
+# Event count (approx.): 108318822
+#
+# Overhead  Command          Shared Object       Symbol                                   
+# ........  ...............  ..................  .........................................
+#
+    48.43%  passwordCracker  libnvomp.so         [.] hxiExecuteHostTreeBarrierWithTasks
+    12.69%  passwordCracker  libnvomp.so         [.] hxiMasterWaitHostTreeBarrierWithTasks
+    11.20%  passwordCracker  libnvomp.so         [.] hxiMasterWaitHostTreeBarrier
+     5.03%  passwordCracker  libnvomp.so         [.] threadPoolEntryPoint
+     2.28%  passwordCracker  [unknown]           [k] 0xffffffffa30f37d5
+     1.70%  passwordCracker  [unknown]           [k] 0xffffffffa30f37c1
+     1.44%  passwordCracker  [unknown]           [k] 0xffffffffa3896380
+     1.28%  passwordCracker  [unknown]           [k] 0xffffffffa30e0550
+     1.27%  passwordCracker  ld-2.28.so          [.] do_lookup_x
+     1.11%  passwordCracker  [unknown]           [k] 0xffffffffa30eba70
+     0.87%  passwordCracker  libc-2.28.so        [.] __sched_yield
+     0.70%  passwordCracker  [unknown]           [k] 0xffffffffa30e6b20
+     0.70%  passwordCracker  [unknown]           [k] 0xffffffffa3106f76
+     0.69%  passwordCracker  [unknown]           [k] 0xffffffffa30e724f
+     0.65%  passwordCracker  [unknown]           [k] 0xffffffffa3004149
+     0.63%  passwordCracker  [unknown]           [k] 0xffffffffa3a00010
+     0.62%  passwordCracker  [unknown]           [k] 0xffffffffa30de9d4
+     0.62%  passwordCracker  [unknown]           [k] 0xffffffffa342d983
+     0.61%  passwordCracker  [unknown]           [k] 0xffffffffa30ead68
+     0.54%  passwordCracker  ld-2.28.so          [.] _dl_lookup_symbol_x
+     0.52%  passwordCracker  ld-2.28.so          [.] check_match
+     0.51%  passwordCracker  [unknown]           [k] 0xffffffffc18d8d66
+     0.50%  passwordCracker  [unknown]           [k] 0xffffffffa30f389e
+     0.46%  passwordCracker  [unknown]           [k] 0xffffffffa30e7935
+     0.42%  passwordCracker  [unknown]           [k] 0xffffffffa30e7905
+     0.42%  passwordCracker  [unknown]           [k] 0xffffffffa3a0001c
+     0.42%  passwordCracker  [unknown]           [k] 0xffffffffa301d181
+     0.42%  passwordCracker  [unknown]           [k] 0xffffffffa31007d2
+     0.42%  passwordCracker  [unknown]           [k] 0xffffffffa3896370
+     0.40%  passwordCracker  [unknown]           [k] 0xffffffffa30f3784
+     0.39%  passwordCracker  ld-2.28.so          [.] _dl_relocate_object
+     0.38%  passwordCracker  [unknown]           [k] 0xffffffffa31006a4
+     0.35%  passwordCracker  [unknown]           [k] 0xffffffffa30e056c
+     0.23%  passwordCracker  [unknown]           [k] 0xffffffffa30041bd
+     0.23%  passwordCracker  [unknown]           [k] 0xffffffffa30f37b7
+     0.21%  passwordCracker  [unknown]           [k] 0xffffffffa30e791a
+     0.16%  passwordCracker  [unknown]           [k] 0xffffffffc18d74e7
+     0.15%  passwordCracker  [unknown]           [k] 0xffffffffa325048e
+     0.13%  passwordCracker  [unknown]           [k] 0xffffffffc0e94ac9
+     0.04%  passwordCracker  ld-2.28.so          [.] _dl_important_hwcaps
+     0.03%  passwordCracker  [unknown]           [k] 0xffffffffa30ead1d
+     0.03%  passwordCracker  ld-2.28.so          [.] strcmp
+     0.02%  passwordCracker  ld-2.28.so          [.] _dl_map_object_from_fd
+     0.02%  passwordCracker  ld-2.28.so          [.] mempcpy
+     0.02%  passwordCracker  ld-2.28.so          [.] version_check_doit
+     0.02%  passwordCracker  ld-2.28.so          [.] _dl_check_map_versions
+     0.02%  passwordCracker  ld-2.28.so          [.] dl_cet_check
+     0.02%  passwordCracker  [unknown]           [k] 0xffffffffa38759af
+     0.01%  passwordCracker  [unknown]           [k] 0xffffffffc18d4be2
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3253521
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa30e6b13
+     0.00%  passwordCracker  libpthread-2.28.so  [.] pthread_create@@GLIBC_2.2.5
+     0.00%  passwordCracker  ld-2.28.so          [.] _dl_runtime_resolve_xsavec
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa32c8899
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa38770e5
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3896210
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa30f3500
+     0.00%  passwordCracker  libpthread-2.28.so  [.] pthread_attr_init@@GLIBC_2.2.5
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa325414d
+     0.00%  passwordCracker  libnvomp.so         [.] hxiSetThreadCPUAffinity
+     0.00%  passwordCracker  ld-2.28.so          [.] _dl_setup_hash
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa30ead5b
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3250440
+     0.00%  passwordCracker  libc-2.28.so        [.] __strcmp_avx2
+     0.00%  passwordCracker  libpthread-2.28.so  [.] start_thread
+     0.00%  passwordCracker  libnvomp.so         [.] createSlaveThreads
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa301e58e
+     0.00%  passwordCracker  libc-2.28.so        [.] __clone
+     0.00%  passwordCracker  libc-2.28.so        [.] __ctype_init
+     0.00%  passwordCracker  libc-2.28.so        [.] _setjmp
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3109bc1
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa38827a7
+     0.00%  passwordCracker  ld-2.28.so          [.] __tls_get_addr
+     0.00%  passwordCracker  ld-2.28.so          [.] _dl_fixup
+     0.00%  passwordCracker  libnvomp.so         [.] hxiHostThreadNum
+     0.00%  passwordCracker  passwordCracker     [.] __nv_bruteForce_F1L34_1
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa30690e3
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3069241
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa314a765
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa321844d
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa321bf71
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa324f1f5
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3259f46
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3259f74
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa326fe72
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa342d9fd
+     0.00%  passwordCracker  [unknown]           [k] 0xffffffffa3a01453
+
+
+#
+# (Tip: For hierarchical output, try: perf report --hierarchy)
+#
